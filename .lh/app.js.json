@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1689760123560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689798373518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,32 @@\n             value = '';\n             operator = null;\n             display.value = total;\n         }\n+        if (e.target.classList.contains('sqr')) {\n+            value = parseFloat(value) ** 2;\n+            display.value = value;\n+        }\n+        \n+        if (e.target.classList.contains('sqrt')) {\n+            value = Math.sqrt(parseFloat(value));\n+            display.value = value;\n+        }\n+        \n+        if (e.target.classList.contains('sin')) {\n+            value = Math.sin(parseFloat(value));\n+            display.value = value;\n+        }\n+        \n+        if (e.target.classList.contains('cos')) {\n+            value = Math.cos(parseFloat(value));\n+            display.value = value;\n+        }\n+        \n+        if (e.target.classList.contains('tan')) {\n+            value = Math.tan(parseFloat(value));\n+            display.value = value;\n+        }\n+        \n     });\n+\n });\n"
+                }
+            ],
+            "date": 1689760123560,
+            "name": "Commit-0",
+            "content": "const display = document.querySelector('.display');\nconst buttons = Array.from(document.querySelectorAll('button'));\nlet value = '';\nlet operator;\nlet total;\n\nfunction calculate() {\n    if (operator === '+') total += parseFloat(value);\n    else if (operator === '-') total -= parseFloat(value);\n    else if (operator === '*') total *= parseFloat(value);\n    else if (operator === '/') total /= parseFloat(value);\n    else total = parseFloat(value);\n}\n\nbuttons.map(button => {\n    button.addEventListener('click', (e) => {\n        const action = e.target.textContent;\n\n        if (!isNaN(action) || action === '.') {\n            value += action;\n            display.value = value;\n        }\n\n        if (action === 'AC') {\n            value = '';\n            total = null;\n            operator = null;\n            display.value = '';\n        }\n\n        if (action === '+/-') {\n            value = parseFloat(value) * -1;\n            display.value = value;\n        }\n\n        if (action === '%') {\n            value = parseFloat(value) / 100;\n            display.value = value;\n        }\n\n        if (e.target.classList.contains('add')) {\n            calculate();\n            value = '';\n            operator = '+';\n        }\n\n        if (e.target.classList.contains('sub')) {\n            calculate();\n            value = '';\n            operator = '-';\n        }\n\n        if (e.target.classList.contains('mul')) {\n            calculate();\n            value = '';\n            operator = '*';\n        }\n\n        if (e.target.classList.contains('div')) {\n            calculate();\n            value = '';\n            operator = '/';\n        }\n\n        if (e.target.classList.contains('eq')) {\n            calculate();\n            value = '';\n            operator = null;\n            display.value = total;\n        }\n    });\n});\n"
+        }
+    ]
+}

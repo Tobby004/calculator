@@ -1,0 +1,26 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1689760123561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689760555903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,12 @@\n button.add, button.sub, button.mul, button.div, button.eq {\n     background-color: #ff9500;\n     color: white;\n }\n+button.add:hover, button.sub:hover, button.mul:hover, button.div:hover, button.eq:hover {\n+    background-color: rgb(34, 12, 12);\n+}\n \n+\n button.zero {\n     grid-column: span 2;\n }\n"
+                },
+                {
+                    "date": 1689798373514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     gap: 10px;\n }\n \n button {\n-    padding: 20px;\n+    padding: 10px;\n     font-size: 1.5em;\n     border: none;\n     border-radius: 50px;\n     background-color: #f0f0f0;\n@@ -67,4 +67,12 @@\n \n button.zero {\n     grid-column: span 2;\n }\n+button.sqr, button.sqrt, button.sin, button.cos, button.tan {\n+    background-color: #bd5757;\n+}\n+\n+button.sqr:hover, button.sqrt:hover, button.sin:hover, button.cos:hover, button.tan:hover {\n+    background-color: red;\n+}\n+\n"
+                }
+            ],
+            "date": 1689760123561,
+            "name": "Commit-0",
+            "content": "body {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    margin: 0;\n    background-color: #202020;\n    font-family: 'Avenir Next', 'Arial';\n}\n\n.calculator {\n    border-radius: 20px;\n    width: 280px;\n    background-color: #a6a6a6;\n    padding: 20px;\n    height: 450px;\n}\n\n.display {\n    width: 90%;\n    padding: 10px;\n    background-color: #666666;\n    border: none;\n    color: white;\n    text-align: right;\n    margin-bottom: 20px;\n    font-size: 2em;\n}\n\n.buttons {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-template-rows: repeat(6, 1fr);\n    gap: 10px;\n}\n\nbutton {\n    padding: 20px;\n    font-size: 1.5em;\n    border: none;\n    border-radius: 50px;\n    background-color: #f0f0f0;\n}\n\nbutton:hover {\n    opacity: 0.8;\n    background-color: red;\n}\n\nbutton:active {\n    opacity: 1;\n    background-color: #d4d4d4;\n}\n\nbutton.ac, button.neg, button.perc {\n    background-color: #d6d6d6;\n}\n\nbutton.add, button.sub, button.mul, button.div, button.eq {\n    background-color: #ff9500;\n    color: white;\n}\n\nbutton.zero {\n    grid-column: span 2;\n}\n"
+        }
+    ]
+}

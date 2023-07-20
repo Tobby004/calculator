@@ -1,0 +1,22 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1689760123558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689798373510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,21 +9,25 @@\n         <div class=\"buttons\">\n             <button class=\"ac\">AC</button>\n             <button class=\"neg\">+/-</button>\n             <button class=\"perc\">%</button>\n-            <button class=\"div\">÷</button>\n+            <button class=\"tan\">tan</button>\n+            <button class=\"sqrt\">√x</button>\n+            <button class=\"sin\">sin</button>\n+            <button class=\"cos\">cos</button>\n+            <button class=\"add\">+</button>\n             <button>7</button>\n             <button>8</button>\n             <button>9</button>\n-            <button class=\"mul\">×</button>\n+            <button class=\"div\">÷</button>\n             <button>4</button>\n             <button>5</button>\n             <button>6</button>\n-            <button class=\"sub\">-</button>\n+            <button class=\"mul\">×</button>\n             <button>1</button>\n             <button>2</button>\n             <button>3</button>\n-            <button class=\"add\">+</button>\n+            <button class=\"sub\">-</button>\n             <button class=\"zero\">0</button>\n             <button>.</button>\n             <button class=\"eq\">=</button>\n         </div>\n"
+                }
+            ],
+            "date": 1689760123558,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n</head>\n<body>\n    <div class=\"calculator\">\n        <input type=\"text\" class=\"display\" disabled>\n        <div class=\"buttons\">\n            <button class=\"ac\">AC</button>\n            <button class=\"neg\">+/-</button>\n            <button class=\"perc\">%</button>\n            <button class=\"div\">÷</button>\n            <button>7</button>\n            <button>8</button>\n            <button>9</button>\n            <button class=\"mul\">×</button>\n            <button>4</button>\n            <button>5</button>\n            <button>6</button>\n            <button class=\"sub\">-</button>\n            <button>1</button>\n            <button>2</button>\n            <button>3</button>\n            <button class=\"add\">+</button>\n            <button class=\"zero\">0</button>\n            <button>.</button>\n            <button class=\"eq\">=</button>\n        </div>\n    </div>\n    <script src=\"app.js\"></script>\n</body>\n</html>\n"
+        }
+    ]
+}
